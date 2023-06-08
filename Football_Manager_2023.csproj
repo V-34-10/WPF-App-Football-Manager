@@ -1,0 +1,365 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Football_Manager_2023</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="image\background.png" />
+    <None Remove="image\bako.png" />
+    <None Remove="image\dentinio.png" />
+    <None Remove="image\Gols.png" />
+    <None Remove="image\ismaili.png" />
+    <None Remove="image\konoplyanka.png" />
+    <None Remove="image\loading_background.png" />
+    <None Remove="image\logo_teams_shahtar.png" />
+    <None Remove="image\maikon.png" />
+    <None Remove="image\marlos.png" />
+    <None Remove="image\match_icon.png" />
+    <None Remove="image\moraes.png" />
+    <None Remove="image\my_logo1.png" />
+    <None Remove="image\Pass.png" />
+    <None Remove="image\patrik.png" />
+    <None Remove="image\plan_icon.png" />
+    <None Remove="image\player_icon.png" />
+    <None Remove="image\pyatov.png" />
+    <None Remove="image\stepanenko.png" />
+    <None Remove="image\transfers\Arveladze.png" />
+    <None Remove="image\transfers\Bako.png" />
+    <None Remove="image\transfers\Besedin.png" />
+    <None Remove="image\transfers\Bezborodyko.png" />
+    <None Remove="image\transfers\Biluch.png" />
+    <None Remove="image\transfers\Bolbat.png" />
+    <None Remove="image\transfers\Budnik.png" />
+    <None Remove="image\transfers\Burda.png" />
+    <None Remove="image\transfers\Bushchan.png" />
+    <None Remove="image\transfers\Buyalskiy.png" />
+    <None Remove="image\transfers\Chachua.png" />
+    <None Remove="image\transfers\Dahnovskiy.png" />
+    <None Remove="image\transfers\Dentinio.png" />
+    <None Remove="image\transfers\DePena.png" />
+    <None Remove="image\transfers\Dombrovskiy.png" />
+    <None Remove="image\transfers\Dudarenko.png" />
+    <None Remove="image\transfers\Garmash.png" />
+    <None Remove="image\transfers\Gegedosh.png" />
+    <None Remove="image\transfers\Goncharenko.png" />
+    <None Remove="image\transfers\Guk.png" />
+    <None Remove="image\transfers\Gumenyuk.png" />
+    <None Remove="image\transfers\Hyechov.png" />
+    <None Remove="image\transfers\Iermachenko.png" />
+    <None Remove="image\transfers\Ismaili.png" />
+    <None Remove="image\transfers\Juk.png" />
+    <None Remove="image\transfers\Kedjora.png" />
+    <None Remove="image\transfers\Kogut.png" />
+    <None Remove="image\transfers\Konoplyanka.png" />
+    <None Remove="image\transfers\Kovtun.png" />
+    <None Remove="image\transfers\Kuchinskiy.png" />
+    <None Remove="image\transfers\Lobaj.png" />
+    <None Remove="image\transfers\Maikon.png" />
+    <None Remove="image\transfers\Makhnyev.png" />
+    <None Remove="image\transfers\Marlos.png" />
+    <None Remove="image\transfers\Matkobaznik.png" />
+    <None Remove="image\transfers\Moraes.png" />
+    <None Remove="image\transfers\Napivlyakh.png" />
+    <None Remove="image\transfers\Panasenko.png" />
+    <None Remove="image\transfers\Patrik.png" />
+    <None Remove="image\transfers\Petko.png" />
+    <None Remove="image\transfers\Povaliy.png" />
+    <None Remove="image\transfers\Pus.png" />
+    <None Remove="image\transfers\Pyatov.png" />
+    <None Remove="image\transfers\Shaparenko.png" />
+    <None Remove="image\transfers\Sirota.png" />
+    <None Remove="image\transfers\Soldat.png" />
+    <None Remove="image\transfers\Stepanenko.png" />
+    <None Remove="image\transfers\Sudorenko.png" />
+    <None Remove="image\transfers\Sydorchuk.png" />
+    <None Remove="image\transfers\Timchuk.png" />
+    <None Remove="image\transfers\Titunin.png" />
+    <None Remove="image\transfers\Traore.png" />
+    <None Remove="image\transfers\Voloshun.png" />
+    <None Remove="image\transfers\Zastavniy.png" />
+    <None Remove="image\transfers\Zavoyskiy.png" />
+    <None Remove="image\transfers_icon.png" />
+    <None Remove="image\traore.png" />
+    <None Remove="loading_background.png" />
+    <None Remove="logo_teams_shahtar.png" />
+    <None Remove="marlos.png" />
+    <None Remove="marlos_shahtar.png" />
+    <None Remove="Pages\4-3-3.png" />
+    <None Remove="Pages\add_match.png" />
+    <None Remove="Pages\background.png" />
+    <None Remove="Pages\background_information.png" />
+    <None Remove="Pages\background_plans_filters.png" />
+    <None Remove="Pages\background_players.png" />
+    <None Remove="Pages\background_teams_filters.png" />
+    <None Remove="Pages\bg_label.png" />
+    <None Remove="Pages\bg_transfer.png" />
+    <None Remove="Pages\btn_add_transfer.png" />
+    <None Remove="Pages\btn_delete_transfer.png" />
+    <None Remove="Pages\btn_diagram_match.png" />
+    <None Remove="Pages\btn_search.png" />
+    <None Remove="Pages\btn_search_date.png" />
+    <None Remove="Pages\Desna-Dinamo.png" />
+    <None Remove="Pages\ico_numbers.png" />
+    <None Remove="Pages\info_50px.png" />
+    <None Remove="Pages\list_players.png" />
+    <None Remove="Pages\logo_teams_shahtar.png" />
+    <None Remove="Pages\marlos.png" />
+    <None Remove="Pages\match_icon.png" />
+    <None Remove="Pages\position_apz.png" />
+    <None Remove="Pages\position_cz.png" />
+    <None Remove="Pages\position_pz.png" />
+    <None Remove="Pages\position_vr.png" />
+    <None Remove="Pages\save_to_file.png" />
+    <None Remove="Pages\Shaparenko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Gols.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\Pass.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pages\btn_diagram_match.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pages\btn_search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\loading_background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\logo_teams_shahtar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\match_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\my_logo1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\plan_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\player_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Arveladze.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Bako.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Besedin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Bezborodyko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Biluch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Bolbat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Budnik.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Burda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Bushchan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Buyalskiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Chachua.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Dahnovskiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Dentinio.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\DePena.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Dombrovskiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Dudarenko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Garmash.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Gegedosh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Goncharenko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Guk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Gumenyuk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Hyechov.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Iermachenko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Ismaili.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Juk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Kedjora.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Kogut.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Konoplyanka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Kovtun.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Kuchinskiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Lobaj.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Maikon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Makhnyev.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Marlos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Matkobaznik.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Moraes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Napivlyakh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Panasenko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Patrik.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Petko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Povaliy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Pus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Pyatov.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Shaparenko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Sirota.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Soldat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Stepanenko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Sudorenko.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Sydorchuk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Timchuk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Titunin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Traore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Voloshun.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Zastavniy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers\Zavoyskiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="image\transfers_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="loading_background.png" />
+    <Resource Include="Pages\4-3-3.png" />
+    <Resource Include="Pages\add_match.png" />
+    <Resource Include="Pages\background.png" />
+    <Resource Include="Pages\background_information.png" />
+    <Resource Include="Pages\background_plans_filters.png" />
+    <Resource Include="Pages\background_players.png" />
+    <Resource Include="Pages\background_teams_filters.png" />
+    <Resource Include="Pages\bg_label.png" />
+    <Resource Include="Pages\bg_transfer.png" />
+    <Resource Include="Pages\btn_add_transfer.png" />
+    <Resource Include="Pages\btn_delete_transfer.png" />
+    <Resource Include="Pages\btn_search_date.png" />
+    <Resource Include="Pages\Desna-Dinamo.png" />
+    <Resource Include="Pages\ico_numbers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pages\info_50px.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Pages\list_players.png" />
+    <Resource Include="Pages\logo_teams_shahtar.png" />
+    <Resource Include="Pages\marlos.png" />
+    <Resource Include="Pages\match_icon.png" />
+    <Resource Include="Pages\position_apz.png" />
+    <Resource Include="Pages\position_cz.png" />
+    <Resource Include="Pages\position_pz.png" />
+    <Resource Include="Pages\position_vr.png" />
+    <Resource Include="Pages\save_to_file.png" />
+    <Resource Include="Pages\Shaparenko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Api.CommonProtos" Version="2.9.0" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="ScottPlot.WPF" Version="4.1.24" />
+  </ItemGroup>
+</Project>

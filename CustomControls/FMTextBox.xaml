@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Football_Manager_2023.CustomControls.FMTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Football_Manager_2023.CustomControls"
+             mc:Ignorable="d" Height="30" Width="250" Padding="7,7,7,7">
+    <UserControl.Foreground>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+    </UserControl.Foreground>
+    <UserControl.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+    </UserControl.Background>
+
+    <TextBlock HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="21" Width="236" FontFamily="Microsoft Sans Serif"/>
+
+</UserControl>

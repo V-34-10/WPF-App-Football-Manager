@@ -1,0 +1,107 @@
+﻿<Page x:Class="Football_Manager_2023.Pages.NewTeam"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Football_Manager_2023.Pages" xmlns:local1="clr-namespace:Football_Manager_2023"
+      mc:Ignorable="d" 
+      d:DesignHeight="575" d:DesignWidth="1014"
+      Title="NewTeam">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pages/background.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="507*"/>
+            <ColumnDefinition Width="507*"/>
+        </Grid.ColumnDefinitions>
+        <Button Width="45" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Pages/info_50px.png"/>
+            </Button.Background>
+
+        </Button>
+        <Border BorderThickness="1" Grid.Column="0" Margin="15,50,15,15" CornerRadius="10" BorderBrush="#ced4da">
+            <Border.Background>
+                <ImageBrush ImageSource="/Pages/background_players.png"/>
+            </Border.Background>
+            <ScrollViewer CanContentScroll="True">
+                <WrapPanel Width="Auto" Height="Auto">
+                    
+                    <local1:PlayerBlock Text="Марлос" Image="/image/transfers/marlos.png"/>
+                    <local1:PlayerBlock Text="Дентіньо" Image="/image/transfers/dentinio.png"/>
+                    <local1:PlayerBlock Text="Бако" Image="/image/transfers/bako.png"/>
+                    <local1:PlayerBlock Text="Ісмаїлі" Image="/image/transfers/ismaili.png"/>
+                    <local1:PlayerBlock Text="Майкон" Image="/image/transfers/maikon.png"/>
+                    <local1:PlayerBlock Text="Мораєс" Image="/image/transfers/moraes.png"/>
+                    <local1:PlayerBlock Text="Патрік" Image="/image/transfers/patrik.png"/>
+                    <local1:PlayerBlock Text="Степаненко" Image="/image/transfers/stepanenko.png"/>
+                    <local1:PlayerBlock Text="Траоре" Image="/image/transfers/traore.png"/>
+                    <local1:PlayerBlock Text="П'ятов" Image="/image/transfers/pyatov.png"/>
+                    <local1:PlayerBlock Text="Коноплянка" Image="/image/transfers/konoplyanka.png"/>
+
+                    <local1:PlayerBlock Text="Бєсєдін" Image="/image/transfers/besedin.png"/>
+                    <local1:PlayerBlock Text="Бурда" Image="/image/transfers/Burda.png"/>
+                    <local1:PlayerBlock Text="Бущан" Image="/image/transfers/Bushchan.png"/>
+                    <local1:PlayerBlock Text="Буяльський" Image="/image/transfers/Buyalskiy.png"/>
+                    <local1:PlayerBlock Text="Де Пена" Image="/image/transfers/DePena.png"/>
+                    <local1:PlayerBlock Text="Гармаш" Image="/image/transfers/Garmash.png"/>
+                    <local1:PlayerBlock Text="Кеджора" Image="/image/transfers/Kedjora.png"/>
+                    <local1:PlayerBlock Text="Шапаренко" Image="/image/transfers/Shaparenko.png"/>
+                    <local1:PlayerBlock Text="Сирота" Image="/image/transfers/Sirota.png"/>
+                    <local1:PlayerBlock Text="Сидорчук" Image="/image/transfers/Sydorchuk.png"/>
+                    <local1:PlayerBlock Text="Тимчик" Image="/image/transfers/Timchuk.png"/>
+
+                    <local1:PlayerBlock Text="Арвеладзе" Image="/image/transfers/Arveladze.png"/>
+                    <local1:PlayerBlock Text="Безбородько" Image="/image/transfers/Bezborodyko.png"/>
+                    <local1:PlayerBlock Text="Білич" Image="/image/transfers/Biluch.png"/>
+                    <local1:PlayerBlock Text="Болбат" Image="/image/transfers/Bolbat.png"/>
+                    <local1:PlayerBlock Text="Домбровський" Image="/image/transfers/Dombrovskiy.png"/>
+                    <local1:PlayerBlock Text="Жук" Image="/image/transfers/Juk.png"/>
+                    <local1:PlayerBlock Text="Ковтун" Image="/image/transfers/Kovtun.png"/>
+                    <local1:PlayerBlock Text="Пусь" Image="/image/transfers/Pus.png"/>
+                    <local1:PlayerBlock Text="Сидоренко" Image="/image/transfers/Sudorenko.png"/>
+                    <local1:PlayerBlock Text="Волошин" Image="/image/transfers/Voloshun.png"/>
+                    <local1:PlayerBlock Text="Завійський" Image="/image/transfers/Zavoyskiy.png"/>
+
+                    <local1:PlayerBlock Text="Дахновський" Image="/image/transfers/Dahnovskiy.png"/>
+                    <local1:PlayerBlock Text="Гегедош" Image="/image/transfers/Gegedosh.png"/>
+                    <local1:PlayerBlock Text="Гончаренко" Image="/image/transfers/Goncharenko.png"/>
+                    <local1:PlayerBlock Text="Гук" Image="/image/transfers/Guk.png"/>
+                    <local1:PlayerBlock Text="Гечев" Image="/image/transfers/Hyechov.png"/>
+                    <local1:PlayerBlock Text="Когут" Image="/image/transfers/Kogut.png"/>
+                    <local1:PlayerBlock Text="Махнев" Image="/image/transfers/Makhnyev.png"/>
+                    <local1:PlayerBlock Text="Напівлях" Image="/image/transfers/Napivlyakh.png"/>
+                    <local1:PlayerBlock Text="Панасенко" Image="/image/transfers/Panasenko.png"/>
+                    <local1:PlayerBlock Text="Петько" Image="/image/transfers/Petko.png"/>
+                    <local1:PlayerBlock Text="Солдат" Image="/image/transfers/Soldat.png"/>
+
+                    <local1:PlayerBlock Text="Будник" Image="/image/transfers/Budnik.png"/>
+                    <local1:PlayerBlock Text="Чачуа" Image="/image/transfers/Chachua.png"/>
+                    <local1:PlayerBlock Text="Дударенко" Image="/image/transfers/Dudarenko.png"/>
+                    <local1:PlayerBlock Text="Гуменюк" Image="/image/transfers/Gumenyuk.png"/>
+                    <local1:PlayerBlock Text="Єрмаченко" Image="/image/transfers/Iermachenko.png"/>
+                    <local1:PlayerBlock Text="Кучинський" Image="/image/transfers/Kuchinskiy.png"/>
+                    <local1:PlayerBlock Text="Лобай" Image="/image/transfers/Lobaj.png"/>
+                    <local1:PlayerBlock Text="Маткобожик" Image="/image/transfers/Matkobaznik.png"/>
+                    <local1:PlayerBlock Text="Повалій" Image="/image/transfers/Povaliy.png"/>
+                    <local1:PlayerBlock Text="Тітунін" Image="/image/transfers/Titunin.png"/>
+                    <local1:PlayerBlock Text="Заставний" Image="/image/transfers/Zastavniy.png"/>
+                    
+                </WrapPanel>
+            </ScrollViewer>
+        </Border>
+        <Border BorderThickness="1" Grid.Column="1" Margin="15,50,15,15" CornerRadius="10" BorderBrush="#ced4da">
+            <Border.Background>
+                <ImageBrush ImageSource="/Pages/background_players.png"/>
+            </Border.Background>
+            <ScrollViewer CanContentScroll="True">
+                <WrapPanel Name="TargetPanel" AllowDrop="True" Background="Transparent" Drop="TargetPanel_Drop" Width="Auto" Height="Auto">
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+
+</Page>

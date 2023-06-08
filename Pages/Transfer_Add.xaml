@@ -1,0 +1,85 @@
+﻿<Window x:Class="Football_Manager_2023.Pages.Transfer_Add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Football_Manager_2023.Pages" xmlns:local1="clr-namespace:Football_Manager_2023.Styles"
+        mc:Ignorable="d"
+        Title="Додавання трансферу" Height="450" Width="800" Icon="/image/my_logo1.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowState="Normal">
+    <Window.Resources>
+        <SolidColorBrush x:Key="brushWatermarkBackground" Color="#FF636464" />
+        <SolidColorBrush x:Key="brushWatermarkForeground" Color="White" />
+        <SolidColorBrush x:Key="brushWatermarkBorder" Color="#EAE321" />
+
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <local1:TextInputToVisibilityConverter x:Key="TextInputToVisibilityConverter" />
+
+        <Style x:Key="EntryFieldStyle" TargetType="Grid" >
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,10" />
+            <Setter Property="Width" Value="160"/>
+            <Setter Property="Height" Value="35"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="350*"/>
+            <ColumnDefinition Width="245*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pages/background.png"/>
+        </Grid.Background>
+        <Button Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,0" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Pages/info_50px.png"/>
+            </Button.Background>
+
+        </Button>
+        <StackPanel Grid.Column="1" Margin="10">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/Pages/bg_transfer.png"/>
+            </StackPanel.Background>
+
+            <Grid  Background="{StaticResource brushWatermarkBackground}" Style="{StaticResource EntryFieldStyle}" Margin="0,40,0,10"  HorizontalAlignment="Center" >
+                <TextBlock  Margin="5,2" Text="Термін контракту" Foreground="{StaticResource brushWatermarkForeground}"
+                       Visibility="{Binding ElementName=textboxTermin, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}" FontFamily="Arial" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Stretch" TextAlignment="Center" Padding="0,5,0,0" />
+                <TextBox  x:Name="textboxTermin" Background="Transparent" BorderBrush="{StaticResource brushWatermarkBorder}" BorderThickness="2,2,2,2" TextAlignment="Center" PreviewTextInput="textboxTermin_PreviewTextInput" FontFamily="Arial" FontSize="14" FontWeight="Bold" Foreground="White" Padding="0,5,0,0" MouseDoubleClick="TeamComboBox_MouseDoubleClick"/>
+            </Grid>
+            <DatePicker x:Name="BeginDate" Width="160" Margin="0, 15, 0, 0" Language="uk-UA" SelectedDate="01/01/2023"  MouseDoubleClick="TeamComboBox_MouseDoubleClick"
+                        Foreground="Black"
+                        Background="{StaticResource brushWatermarkBackground}"
+                        SelectedDateFormat="Short"  FontFamily="Arial" FontSize="14" FontWeight="Bold" />
+            <DatePicker x:Name="EndDate" Width="160" Margin="0, 15, 0, 0" Language="uk-UA" SelectedDate="01/01/2024" MouseDoubleClick="TeamComboBox_MouseDoubleClick"
+                        Foreground="Black"
+                        Background="{StaticResource brushWatermarkBackground}"
+                        SelectedDateFormat="Short" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
+            <Grid  Background="{StaticResource brushWatermarkBackground}" Style="{StaticResource EntryFieldStyle}" HorizontalAlignment="Center" >
+                <TextBlock  Margin="5,2" Text="Ціна контракту" Foreground="{StaticResource brushWatermarkForeground}"
+                       Visibility="{Binding ElementName=textboxPrice, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}" FontFamily="Arial" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Stretch" TextAlignment="Center" Padding="0,5,0,0" />
+                <TextBox  x:Name="textboxPrice" Background="Transparent" BorderBrush="{StaticResource brushWatermarkBorder}" BorderThickness="2,2,2,2" TextAlignment="Center" PreviewTextInput="textboxPrice_PreviewTextInput" FontFamily="Arial" FontSize="14" FontWeight="Bold" Foreground="White" Padding="0,5,0,0" MouseDoubleClick="TeamComboBox_MouseDoubleClick" />
+            </Grid>
+            <ComboBox x:Name="TeamComboBox" Width="160" HorizontalAlignment="Center" Margin="0,10,0,0"  MouseDoubleClick="TeamComboBox_MouseDoubleClick"
+                      Height="35" SelectedIndex="0" FontSize="14" Foreground="Black" 
+                      FontFamily="Arial Black" FontWeight="Bold" FontStyle="Normal" 
+                      BorderBrush="Silver" IsReadOnly="True" Padding="5">
+                <ComboBoxItem Content="ФК Динамо"/>
+                <ComboBoxItem Content="ФК Шахтар"/>
+                <ComboBoxItem Content="ФК Десна" />
+                <ComboBoxItem Content="ФК Верес" />
+                <ComboBoxItem Content="ФК Карпати"/>
+            </ComboBox>
+            <ComboBox x:Name="PlayersTransferComboBox" Width="200" HorizontalAlignment="Center" Margin="0,10,0,0"   MouseDoubleClick="TeamComboBox_MouseDoubleClick"
+                      Height="35" SelectedIndex="0" FontSize="14" Foreground="Black" FontFamily="Arial Black" 
+                      FontWeight="Bold" FontStyle="Normal" BorderBrush="Silver" IsReadOnly="True" Padding="5" />
+            <Button x:Name="addTranfer" Content="" Margin="0,20,0,0" Width="160" Height="35" Click="addTranfer_Click" MouseDoubleClick="TeamComboBox_MouseDoubleClick">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Pages/add_match.png"/>
+                </Button.Background>
+            </Button>
+            
+        </StackPanel>
+
+    </Grid>
+</Window>
